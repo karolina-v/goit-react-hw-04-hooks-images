@@ -21,8 +21,10 @@ const ImageGalleryItem = ({
 };
 
 ImageGalleryItem.propTypes = {
-  webformatURL: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
   alt: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  webformatURL: PropTypes.string.isRequired, 
   openModal: PropTypes.func.isRequired,
 };
 
